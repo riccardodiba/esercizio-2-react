@@ -4,29 +4,24 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import MyNav from './components/MyNav';
 import MyFooter from './components/MyFooter';
 import MyBook from './components/MyBook';
-
+import { Container } from 'react-bootstrap'
 
 
 function App() {
   return (
-    <div>
-  <header>
-    <MyNav />
-    </header>
-    <main>
+    <Container>
+      <MyNav />
+     
       <MyBook />
-    </main>
-    <footer>
       <MyFooter />
-    </footer>
-    </div>
-    
+    </Container>
+  )
+}
+
+export default App
+
  
      
  
   
 
-);
-}
-
-export default App;
